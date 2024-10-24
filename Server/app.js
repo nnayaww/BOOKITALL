@@ -5,9 +5,7 @@ require('dotenv').config();
 import connectDB from './config/db';
 import errorHandler from './middleware/errorHandler.js';
 import apiLimiter from './middleware/rateLimit.js';
-import songRoutes from './routes/songRoutes.js';
 import userRoutes from './routes/userRoutes.js';
-import playlistRoutes from './routes/playlistRoutes.js';
 require('newrelic');
 
 
@@ -25,9 +23,8 @@ app.use('/api/', apiLimiter);
 
 
 // Routes
-app.use('/api/songs', songRoutes);
 app.use('/api/users', userRoutes);
-app.use('/api/playlists', playlistRoutes);
+
 
 // Error handling middleware
 app.use(errorHandler);
