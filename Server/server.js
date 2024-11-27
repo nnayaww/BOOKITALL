@@ -10,7 +10,7 @@ app.use(express.json()); // For parsing JSON
 
 // Test Route
 app.get('/', (req, res) => {
-    res.send('Welcome to BookItAll! by Appify Solutions Inc');
+    res.send('Welcome to BookItAll! by Appify Solutions Inc.');
 });
 
 app.listen(PORT, () => {
