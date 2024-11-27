@@ -10,7 +10,7 @@ app.use(express.json()); // For parsing JSON
 
 // Test Route
 app.get('/', (req, res) => {
-    res.send('Welcome to the Booking App API!');
+    res.send('Welcome to BookItAll!');
 });
 
 app.listen(PORT, () => {
